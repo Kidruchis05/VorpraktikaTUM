@@ -1,0 +1,93 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #cddfea;
+}
+
+.subcontainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #edeae6;
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 20px;
+}
+
+.left-group {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    /* space between logo and nav links */
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* optional knightly flourish */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* optional polish */
+}
+
+.logo img {
+    height: 30px;
+    position: relative;
+    top: 6px;
+    /* or whatever doesn’t make it look like pixel vomit */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.loginContainer {
+    margin-left: 10px;
+}
+
+.forgot-password {
+    margin-top: 20px;
+}
+
+.pipe {
+    color: black;
+    padding: 0 5px;
+    font-size: 0.9rem;
+}

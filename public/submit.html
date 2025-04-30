@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title> Einreichen | vorpraktika.de</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="logo">Einreichen</span>
+        </div>
+    </div>
+    <div class="subcontainer">
+        <form action="/api/reviews" method="POST">
+            <p>
+                <label for="company-name">Firmenname:</label><br>
+                <input type="text" id="company-name" name="company_name" required>
+            </p>
+            <p>
+                <label for="company-website">Firmenwebseite:</label><br>
+                <input type="text" id="company-website" name="company_website" required>
+            </p>
+            <p>
+                <label for="review">Kommentar:</label><br>
+                <textarea id="review" name="review_text" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Einreichen</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
