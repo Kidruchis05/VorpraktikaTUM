@@ -64,7 +64,7 @@ body {
     height: 30px;
     position: relative;
     top: 6px;
-    /* or whatever doesn’t make it look like pixel vomit */
+    /* or whatever doesn't make it look like pixel vomit */
 }
 
 .nav-links {
@@ -90,4 +90,49 @@ body {
     color: black;
     padding: 0 5px;
     font-size: 0.9rem;
+}
+
+.tag-input-container {
+    margin-top: 10px;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.tag {
+    background-color: #e9ecef;
+    border-radius: 16px;
+    padding: 4px 12px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #495057;
+}
+
+.tag .remove-tag {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.tag .remove-tag:hover {
+    color: #dc3545;
+}
+
+#tag-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#tag-input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
