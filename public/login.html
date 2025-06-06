@@ -9,16 +9,16 @@
 
 <body>
     <div class="loginContainer">
-        <h3>Anmelden</h3>
+        <h3>Login</h3>
         <form action="/api/login" method="POST">
             <table>
                 <tr>
 
-                    <td><label for="login-username">Benutzername:</label></td>
+                    <td><label for="login-username">username:</label></td>
                     <td><input type="text" id="login-username" name="username" required></td>
                 </tr>
                 <tr>
-                    <td><label for="login-password">Passwort:</label></td>
+                    <td><label for="login-password">password:</label></td>
                     <td><input type="password" id="login-password" name="password" required></td>
                 </tr>
             </table>
@@ -27,7 +27,7 @@
         </form>
 
         <div class="forgot-password">
-            <a href="#">Passwort vergessen?</a>
+            <a href="#">forgotten password?</a>
         </div>
 
         <h3>Account erstellen</h3>
@@ -35,16 +35,16 @@
         <form action="/api/register" method="POST">
             <table>
                 <tr>
-                    <td><label for="signup-username">Benutzername:</label></td>
+                    <td><label for="signup-username"> username:</label></td>
                     <td><input type="text" id="signup-username" name="username" required></td>
                 </tr>
                 <tr>
-                    <td><label for="signup-password">Passwort:</label></td>
+                    <td><label for="signup-password">password:</label></td>
                     <td><input type="password" id="signup-password" name="password" required></td>
                 </tr>
             </table>
             <br>
-            <button type="submit">account erstellen</button>
+            <button type="submit">create account</button>
         </form>
     </div>
 </body>

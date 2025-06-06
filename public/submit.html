@@ -4,28 +4,40 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <title> Einreichen | vorpraktika.de</title>
+    <title> Submit | vorpraktika.de</title>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <span class="logo">Einreichen</span>
+            <span class="logo">Submit</span>
         </div>
     </div>
     <div class="subcontainer">
         <form action="/api/reviews" method="POST">
             <p>
-                <label for="company-name">Firmenname:</label><br>
+                <label for="company-name">Company Name:</label><br>
                 <input type="text" id="company-name" name="company_name" required>
             </p>
             <p>
-                <label for="company-website">Firmenwebseite:</label><br>
+                <label for="company-website">Company Website:</label><br>
                 <input type="text" id="company-website" name="company_website" required>
             </p>
             <p>
-                <label for="review">Kommentar:</label><br>
-                <textarea id="review" name="review_text" required></textarea>
+                <textarea id="review" name="review_text" required
+                    rows="6">What went well. What went wrong. What can be improved.</textarea>
+            </p>
+
+            <p>
+                <label for="tags">Tags:</label><br>
+                <select id="tags" name="tags" multiple size="5" class="multi-column">
+                    <option value="pre-internship">Pre-Internship</option>
+                    <option value="engineering-internship">Engineering Internship</option>
+                    <option value="paid">Paid</option>
+                    <option value="duration-4-8">Duration: 4-8 Weeks</option>
+                    <option value="duration-3+">Duration: 3+ Months</option>
+                </select>
+                <span class="hint">Hold Ctrl/Cmd to select multiple</span>
             </p>
             <p>
                 <button type="submit">Einreichen</button>
