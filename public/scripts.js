@@ -5,10 +5,9 @@ const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 async function fetchReviews() {
     const { data, error } = await supabase
-        .from("reviews")
-        .select('id, company, websites, upvotes, comment')
-
-        //order the reviews table by upvotes and then created at
+        .from('reviews')
+        .select('id, company, website, comment, upvotes, created_at')
+        // order the reviews table by upvotes and then creation time
         .order('upvotes', { ascending: false })
         .order('created_at', { ascending: false });
 
@@ -19,4 +18,4 @@ async function fetchReviews() {
 
     // the data is an array of review objects
     return data;
-}   
+}
