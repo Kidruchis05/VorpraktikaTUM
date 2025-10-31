@@ -1,0 +1,293 @@
+---
+alwaysApply: false
+---
+Design thinking:
+
+EMPHATHIZE
+I assume this is the part where I go to the campus and ask random students a couple of questions. Talk to people and such. Understand the problem.
+Premise
+You are 18-20 years old, hold a solid high school deploma in your hands, and decided for studying a technical degree at TUM eg one of those: Maschinenwesen, Aerospace, Informatik, Wirtschaftsinformatik, Etechnik. 
+
+
+
+Some of these Programs require mandatory Internships. Pre-Internships, German: Vorpraktika. 
+
+You have 10 seconds of my attention. I need to provide value in that timeframe.  What is the hook?
+The site needs to be clear and blunt. That is an assumption. I assume students want bluntness. They say they do. But wait, no. Students say they want truth. In reality, they want validation, dopamine and low stakes curiosity. The 10 second model only works after trust is built. They need to be hooked first. I am selling medicine, not candy. Maybe I need to add some kind of layered entry. First table maybe is the survival kit, the hook. Everything else might be the optional deep dive. 
+
+Eg site is a clean blunt table
+Row 1 Vorpraktikum workshop at bmw, Paid, mostly metal filing, counts, -> Get it done, nothing learned
+Row 2 WARR Rocketry Propulsion Team, unpaid, oct deadline, interesting work, but skills of little relevance in the market, 80% paperwork, -> Quit after 3 weeks
+Row 3 Innovation Sprint, unpaid, in June, -> Fun, but Ideas not realistic, good for credits, meh for startups
+
+So this is scannable in 10 seconds. And even if I don’t know what half of this is, I realize: Shit, I still must do the pre internship, The rocket club isnt what I thought, This sprint thing exists, maybe later. 
+
+So value can be delivered in under 10 seconds. But I would need a information first design and mindset. So no flowing fancy bubbles big arrows and images. Which are websites where I can draw inspiration from. Hacker news maybe?
+https://news.ycombinator.com/item?id=45425568
+DEFINE
+Core Problem
+
+Myself: 20 year old third semester Mechanical engineering bachelor student at tu munich. 
+
+1))We have structural overlap and diffusion: State funded universities offer newsletters, portals, more newsletters, and some free programs. And the private sector with its polished websites, sponsor driven events, internships, "career days", and 90% of the content is corporate PR. And there are Hybrids, such as UnternehmerTUM, WARR, "Future Minds". Half uni half company and its unclear really if its education marketing or cheap labour. 
+So we get three mentoring programs, from different directions, all with similar names, and nobody has the monopoly of attention. There is inclarity: Students cant tell whats obligatory, whats optional but strategic, and whats just noise. 
+For example, we have state: TUM mentoring, private: company mentorships, and hybrid: UnternehmerTUM. Or Career fairs: TUM Ikom, VDI Jobmesse, TNG Big Tech day, BMW open days.
+2)) Students have access to information (AI, open courses, global knowledge) but they stay in the parochial system that controls credits prerequisites. 
+
+So they obey the second, even if the first is more valuable, because the second gives them credential. 
+So the real problem might be Fragmentation, credential chokehold, and wasted effort. 
+
+Students often fail mandatory internships because: 1) They don’t know these are required until it’s too late. 2) There’s too little time between Abitur and semester start to apply properly. 3) The application process is high‑friction. This leads to procrastination and desperation. But the real problem isnt mandatory internships.
+
+Its opportunities that are foggy, scattered and overhyped. 
+So even if no one had to do these internships, the platform would need to show students what is worth their time, what is a waste, help them grab easy early opportunities and over time grow into bigger ones. It would also need to cut through the sugarcoating across jobs clubs events etc. 
+
+But this is too broad. Everyone agrees, but no one would do anything. Its not about "you could do these". Its about "if you miss this in your first semester, you are shooting yourself in the knee".
+The platform shouldn’t be a wikipedia of opportunities. There needs to be a hook, a checklist of non-negotiables. Must attend, must do, must know. Or else, you will. Miss. out. 
+
+And once students trust me on the musts, they will also use the platform for the maybes. And that trust keeps them around. 
+
+So for a semester 1 student, you might have a "survival kit": Semester 1 essentials. A curated handful of Vorpraktika, clubs that actually deliver, 1-2 events eg the innovation Sprint, a hackathon or summer school if it fits early stage access. 
+
+So there is the tactical and the strategic way to handle this.
+
+Tactical, short term, surface level (focusing on specific problems students face today):
+Internship deadlines unclear -> showing blunt clear dates
+Club descriptions are sugarcoated -> adding peer reviews
+Events are foggy -> fix by putting them into a sortable page
+
+
+
+Strategic, long term and structural (why do these problems keep recurring in the first place):
+Broad and systemic, involves architecture and incentives, year long horizon
+We have universities, private players, and hybrids competing for student attention, offers overlap -> duplication, noise
+Students have infinite knowledge access via AI, google, but credential giving system drags them down to low value courses -> structural discrepance between abundance and bottleneck
+-> expose disfunction of opportunities (overlap, bottlenecks, diffusion) and arbitrate between state, private and hybrid offers. Strategic: optional, but "done right".  
+
+So imagine you are in an upper semester and maybe you already know people at BMW, MTU or Airbus. You still need want to know if BMW is better than MTU, Airbus or a smaller Mittelstand supplier for learning. 
+
+I also spotted just now structural flaws in my system. Fragmentation isnt my problem. Friction is. I would be yet another source unless I displace or absorb an incumbent. It is per design high friction. Users must log in, chosse a semester, chosse a major, understand the tags, and then read the reviews. They will leave. The landing page needs to be usable without thinking. Maybe no filters, no decisions. Just "See what to do this week". 
+
+Another problem. Data reliability, and quality. My premise is peer reviews reveal reality. But there is a bias. Early users might be self selected. Its going to be biased. Its going to be low volume. The peer reviews might not be actually useful, because people are emotional about it maybe. Its unmoderated. How can I mitigate that? I absolutely need then a review template that is structured? EG "What did you expect? What actually happened?" Would you do it again?" And maybe even "How many hours / weeek did you actually work? %Useful vs useless tasks".
+
+And then there is the legal risk. Someone writes something untrue, and its me who is liable. So no direct person mentions I suppose. And offer auto generated summaries maybe even? So eg "based on 8 reviews: Mostly paperwork, minor engineering, low relevance". I would need legal disclaimers and strict moderation. From day 1…
+
+
+Also, how do I even know this works? Will students stay? Act? Tell others? So my core metric should be prevented pain, but more like behaviours changed. Who applied earlier than average? As a percentage. Same with attended event, or who as a % used the tool to again a month later? I would need some kind of embedded feedback loops. Maybe I should ask questions like did it help choose or was the review accurate or what did you end up doing? So yeah I would need to measure outcome behaviour somehow. 
+
+How about design philosophy? For that I would need to look at my audience. Overstimulated freshmen. Students who are attention and dopamine deprived. Visually trained users see tik tok instagram. Do I opt for a design that is very simple and displays little at a time, so that it can be focused of one thing at a time? Or should it be more like offering lots of information not chaos but like ordered but a lot of info because that’s what we need übersicht over the forest and not seeing individual trees. That would be a text based approach, info first, visual second. Someone on reddit said that’s what experienced programmers also like kinda because things have gone bloated nowadays to the point that websites are rarely useful but more like a bloat. See how hackernews has hold up over the decades with their ultra old design, and still for a lot of people a lot of intelligent people its one of the if not the favourite website, because it has understood its assignment. So in any way I cant afford to be ugly. I would need to make use of visual cues maybe? So things like urgend, optional hidden gems big deadline upcoming and colour code stuff into green red gray some badges etc.
+
+So the mission of my platform is not to provide vitamins and nice opportunities. This is not urgent. The mission is: Helping inexperienced students new to the game of extracurriculars prevent the mistake of not taking care of internships and not working on real problems. But real world problem solving skills are the #1 leverage employers (at least the decent ones) look for. 
+
+
+
+
+
+
+
+
+
+ 
+
+
+Why This Matters
+	• Missed internships = delayed studies.
+	• Late scramble = unpaid, low‑quality work.
+	• Creates unnecessary stress at a major life transition.
+
+Also, realizing opportunities, even only knowing about them, provides value.
+Goal
+To make internship discovery and application feel low friction, these aspects are needed:
+	• Certainty: clear, blunt answers instead of reading sugarcoated job listings across 10 sites.
+	• Retention: structured info + personal experiences that stick in memory.
+	• Perspective: not just facts, but reactions, comparisons, and relevance.
+	• Engagement: connected ideas spark associative memory, keeping students invested.
+	• Relevance: users see what matters now (deadlines, paid/unpaid, recognition), not generic filler.
+
+
+
+Extended Context: Beyond Internships
+	• Exams and internships both trigger urgency: high stakes, high FOMO, adrenaline.
+	• Extracurricular programs (mentorships, incubators, rocket clubs, case competitions) suffer the same problems:
+		○ Information on student services is foggy, scattered, or hidden.
+		○ Websites are sugarcoated and vague, often AI‑fluff instead of real talk.
+		○ Students only realize after joining that the culture or tasks don’t match expectations.
+	• Consequence: wasted time, disillusionment, and missed opportunities.
+
+Company listings:
+The Problem here is that linkedin gives them reach. Why would they bother with my small platform? Also, TUM job fairs exist. They can just have a table there once a year and be done. Also, my early audience is tiny. From their view, I am not worth their time. 
+So why might they care? What can I leverage?
+-> Targeting. Linked in is untargeted, with my platform, there is strong filtering by TUM programs and semester. A company offering vorpraktika does not want 1000 random applicants, they want 30 maschinenwesen freshmen who need it.
+-> Transparency. If my platform becomes THE place where students trust the reviews, they would want to be present. Maybe they will also want to be present just to manage perception.
+-> Its cheap. Linkedin posts might get buried.
+-> Maybe they care about their brand and want to be involved in a platform where students views of the company get shaped. They wont control what is said about them, but they could be THERE.
+So: Companies will not willingly list. That’s not how it works. They will ignore until I have a critical mass of students (so that ignoring me is a lost opportunity) or my reviews shape their reputation.
+So until then my site should lean on student generated listings (students upload the internship, review it, tag it), and companies come later once I have made myself visible.
+How about university admins? And TUM in general? This would make TUM look incompetent. A scrappy website by a student doing better than the universities newsletters might indicate that they cant even onboard their own freshmen. Blunt peer reviews about oöfficial programs such as the Innovation sprint might make official programs look bad. Admins probably dislike "shoadow channels". If I do something that they offer directly I might be seen as competition not as a partner. There is also a Brand risk. Imagine the headline "TUM students build site to navigate bureaucratic chaos".
+But they could also benefit somehow. The site could absorb the chaos of communicating internships and events and they could support it. There is also a Feedback loop effect. Peer reviews offer transparency and expose which programs suck. That’s data they only get in surveys only a fraction of students actually fill out. This is alos a PR opportunity. They could market it as "TUM empowers students to build tools for students". 
+So my platform can position itself as a replacement for TUMs foggy channels. Maybe a smarter angle would be to pitch it as a student led amplifier. Make them look like they care about innovation and make it work as a "translator into blunt reality" so students can act on it. 
+That is the strategic risk. They will not, I don’t know, shut me off if I provide them with data, right? Data they didn’t have. Or some kind of off ramp where they back me somehow I don’t know. 
+
+EDGE CASES
+Internation al students who arrive late: They don’t have months of lead time for Vorpraktikum or event deadlines. They are already behind. So my system would need more than a ideal timeline mode. Something where users can see the "queue" for what they still need to do. 
+They might have difficulties with German. Most of the postings and job ads and event things will be in Denglish or pure German. A blunt filter written in the German language might not help them. So this would only work for them If peers summarized in English. So, I would need a bilingual baseline or at least automatic translations to help internationals.
+There are also limitations to the barrier tag model. It works okay at first. But it breaks when nuance matters. TUMJA might be high because you need 10 weeks of internships and a high gpa. Another program might also have a high barrier but it only looks at gpa and the letter of motivation, future minds for logistics I suppose for example. So maybe I need at least a light annotation ("High- selective interviews" vs "High- GPA selective"). 
+
+Timeline mapping will be a challenge. Lets craft a example to understand its implications:
+Year 0 to year 1 timeline:
+Abitur results (June). Students don’t even know Vorpraktikum is required. They think summer = holiday. Frictino: Application windows closing before they even start. My leverage would be some kind of survival kit: "Congrats on Abitur, heres the 3 things you must do now or lose a semester". 
+From June to September, they scramble for the Vorpraktikum. There is a fog: Which companies count? How many weeks? How to even apply? A lot of phonecalls, unclear job descriptions, unpaid busywork. My leverage is the filter + blunt reviews. "This job helps, this one is a waste, apply 3 months in advance". 
+Then in October there is the Semester 1 shock. What clubs should I join? Which ones have charmismatic teams, which ones are physical, which ones teach you important skills and which ones useless skills? So students overcommit, and drop after 3 weeks, learn something, but its wasted energy. My leverage here is the peer reviews and the barrier tags. 
+Then the exam phase (February, March and April). Students probably learn about tutoring and mentoring or whatever services after the phase. The discover resources too late. So I need toi make services visible BEFORE the exam crunch. 
+Then in the summer break, students might re enter clubs, but still don’t know if they made the right choice. So there is burnout maybe, and some disillusionment. So m,aybe I need to implement a stickiness score from the peers. To see which clubs actually retain members. For the summer break, there will probably also be summer schools, opportunities for internships abroad, project weeks, all barely advertised and deadlines long past. Also there is a high barrier perception "not for me" so they never apply (maybe even rightfully so"). So my leverage here needs to be early alerts. Flaag these in semester 1 so they have lead time. 
+So these are 4 ish phases, and my platform needss to actively tailor its design to meed the unique needs I suppose. 
+
+So, another problem. How do I measure if my system has an effect? How do I measure if bluntness actually reduces dropout? Is there some way to track retention in clubs or programs? Maybe when blunt reviews warn 80% doing minor gigs, then fewer people might want to sign up, but how do I measure that? There really is no way to track the ration of sign ups to completions that would be a ridiculous endeavor… right? But the reviews do offer the opportunity to learn of the opportunity matched expectations on a individual basis. Also: How many missed internships / events/ programs do I need to prevent before this project is "worth it"? Lets assume 500 students start in Maschinenwesen per year. Maybe 40% miss their Vorpraktikum or don’t have it 100%. 
+
+And lets face it. There is a long term risk. The risk of being one of those typical student projects that dies. Reasons might include no content (no posts), no retention (one time use then forgettable), no evolution (old listings, old reviews) or no mod system. 
+So I really need to avoid that. How? Maybe start only with one degree? Maschinenwesen? I will populate it myself then? With listings that I made up maybe? That does not sound very good. Maybe then I just ask people, fellow kommilitonen from my program I know, or from aerospace too maybe. 
+And if no one leaves comments/reviews? Does the system collapse? I suppose yes if reviews are my only unique value. Maybe I should bootstrap with structuredbasics then? Aka deadlines tags summaries what do I know. And its important that I don’t fall into any traps.
+YouTube is such a phenomenal business model.
+If Amazon aims to be ‘the everything store’ then YouTube can arguably claim to provide ‘everything entertainment’.
+YouTube doesn’t have the Netflix problem of shelling out ever greater amounts to create ‘content’. The YouTubers pay for the content creation themselves.
+YouTube doesn’t have to worry about users binge watching everything on the site and running out of entertainment. I read that over 500,000 hours of video are uploaded to YouTube each day. Clearly that won’t all be on topics that all given viewers will want to watch but the main point here is that it is physically impossible for anyone to watch everything that is being uploaded.
+The viewers (2.7 billion daily active users) are always available in abundance on the site. The algorithm can serve up content on virtually any topic. Advertisers can easily pitch their adverts towards viewers who are watching content on particular topics.
+
+
+As we see here I need to set the frame, but not actually intervening too much. Be the speaker, not the voice somehow. Does that make sense?
+At the same time its fairly easy to take 1-2 days and track all the TUM adjacent programs and opportunities and events when they start when they end, right? Make one big map. And then on top of that the "fluid" opportunities?
+
+Also, another problem: Students procrastinate on everything. Its simply not their job to look out for opportunities like that. They need to register for exams and take them. That is their sole puropse. Everything on top of that is optional territory. Clubs hate criticism. Lack of incentives for companies. There may be too much Noise, too many crap reviews. Maybe I need to look at each review manually and "accept" it before its fully posted? Its not censorship of the sole metric is no rants allowed? 
+
+Also I will probably drown some way or another in scope creep. "Wouldn’t it be cool if…" aka charts karma points may turn it too bloated, away from the hacker news lean style mission. 
+
+I looked at some reddit threads on glassdoor. Opinions and comments. Insights:
+People tend to post a review if they are cranky and want to complain. If you are satisfied / not inclined towards any attitude ("its fine"), "not great, nor terrible", then people dont tend to post. Someone wrot eabout a ratio: 20 negatives to one positive, and you are fine. Negatives may be from the same dissatisfied employee, positives maybe be fake and a pr stunt. So you really need to critically analyze it. 
+this is probably why purely focusing on the platform as a way for finding events/internships you recommend is NOT a good idea, because people dont bother to post somehting if they havent been personally slapped in the face. Then again, only focusing on negative reveiws might lead to more traction, but also problems with the reviewed ones maybe? I mean there IS a risk of the platform becoming a toxic ventoff website so i would need to be careful with that, but it would boast higher review rates than a purely do recommend review listing. 
+then again, people who look for these opportunities, do they want to learn about opportunities people like, or no go opportunities? No go opportunities might be actually interesing to read. I myself when i shop products i always skip 5 star reviews because i can exactly imagine what it says. Good product good quality very useful blablabla while a 3 star review might offer novelty, a new perspective or something i should definetly know before buying. 
+So. How do i even position my platform????
+Make it such that with each review the submitter decides if they want to recommend / not recommend the opportunity, like the approach with studycheck, where people review studiengänge in germany? At specific universities? This has actually helped me choose maschbau because it had a high recommendation rate lol. But this is also a terrible way to choose studiengänge. At the one hand yuo get the raw feelings of students on the other hand, well, its not the highest quality of text i have read.
+
+Auch. Deutschland hat nicht zu wenige gründer. Es fehlen die wachstumsgründer. Die die skalieren. Das ist rar. Lauf KfW sind die Gründe: zu wenig Riskikokapital, zu wenig Digitalisierung, zu viele Solo Selbstständige. Ich sollte also nicth den fehler machen, das ding als Informations-Portal zu denken. Das wäre so ein ein Mann selbstständigen ding. Es ist ein Infrastruktur layer, der automatisierbar ist. Also vernetzbar mit Hochschulen, Firmen und Verbänden zum beispiel. Zb wenn ich es schaffe dass mein system hier daten über studiengangentscheidungen liefert dann werde ich für die tum bmw oder ihk maybe keine ahnung strategisch wertvoll oder so. 
+
+Also was soll mein mindset sein? Ich bin einer von den "Multiplikatoren". Ein gründer, der andere befähigt. Des ist zb ein studierender ein handwerker ein Kleinunternehmer. Ich würde dadurch gemäß des KfW überproportionalen wirtschaftlichen Nutzen schaffen. Ich will halt die Eigeninitiative von den Studenten halt so hebeln und somit halt den Übergang von Bildungssystem zu Wirtschaft boosten. 
+
+
+
+Underlying Pattern
+Students consistently lack:
+	1. Transparency about what opportunities actually demand and deliver.
+	2. Perspective on how options compare (quality, intensity, payoff).
+	3. Bluntness in presentation: no sugarcoating, no filler.
+The same design principles that fix internships could apply to all student opportunities.
+
+Examples of the Fog
+	• Aerospace student clubs (e.g., WARR Rocketry): many join with high hopes. Fresh students are attracted by prestige and flair, but quit within weeks. Why? Work turns out to be mostly documentation, bureaucracy, or menial tasks. Tutoring and mentoring culture is little present. There may be little sense of actual task ownership. Leadership can be unmotivated or incompetent. Result: disillusionment.
+	• Incubators and mentorships: advertised as transformative, but often only deliver generic workshops and networking and minimal personal growth.
+	• Hackathons/competitions: marketed as gateways to innovation, yet many are poorly organized, low‑impact, and fail to create lasting value.
+These gaps between expectation and reality drive wasted energy, high dropout, and mistrust.
+
+Exemplary Case: Startup Job Postings
+This single example captures the larger fog: instead of blunt, comparable data, students get sugarcoated marketing copy.
+
+Hidden Events
+	• Networking & academic events (summer schools, project weeks, innovation sprints) are often life‑changing but remain invisible to most students.
+	• Problem: scattered announcements, vague promotion, unclear eligibility. Only highly motivated or well‑connected students even hear about them.
+	• Examples:
+		○ Neuroengineering Summer School (TUM + Georgetown?): admissions surprisingly open, unique labs + lectures, but discovered only via a parent’s newsletter.
+		○ TUM Project Weeks / Innovation Sprint: credits + exposure to entrepreneurship, yet skewed towards management students; most others unaware it even exists. Also, the business ideas developed there are NOT realistic. I attended the 2024 innovation sprint and saw the 2025 innovation sprint in the ranks. It helps for education, not much else. 
+	• Effect: opportunities that could shape careers end up under‑attended or mis‑targeted. Students who do attend often realize too late how valuable they are, while peers remain in the dark.
+Again, the root issue is the same: no blunt perspective, no comparability, and no clear channel that puts events into context.
+
+Personal Experience: Low Barrier, High Impact
+	• Entry into these programs often feels intimidating — students assume only top‑qualified peers get in.
+	• In reality, admissions can be surprisingly open. Example: applying as a second‑semester student with little more than some casual coding and gaming experience, and still being accepted into an elite summer school.
+	• Future minds for logistics
+	• Lesson: perceived barriers are often higher than actual ones. Without blunt accounts from peers, most students never even try.
+
+Accumulation Effect
+	• Low-barrier experiences may look minor, but they stack.
+	• Over time, these small wins build credibility and confidence.
+	• Result: you become unexpectedly eligible for higher-barrier, selective programs.
+	• Students underestimate this compounding — they dismiss “easy” opportunities without realizing their cumulative value.
+
+Psychology of FOMO vs. Access
+	• Exams, internships, and events trigger urgency and FOMO.
+	• But foggy access kills initiative: if you don’t know where or how to apply, adrenaline fades into inaction.
+	• Clear, blunt access channels convert urgency into participation.
+
+Discovery Channels
+	• Most students find opportunities by accident: parent newsletters, random ambition phases, word of mouth.
+	• Few have systematic access or a central hub.
+	• This randomness reinforces inequality: connected students stumble into gold, others miss out entirely.
+
+Expectation vs. Reality Matrix (Examples)
+	• Internship — Expect: practical engineering. Reality: repetitive manual labor.
+	• Club — Expect: rocket design. Reality: endless documentation and politics.
+	• Event — Expect: networking and inspiration. Reality: vague workshops, uneven quality.
+	• Job — Expect: impact and learning. Reality: sugarcoated ads, unclear tasks.
+
+
+Confirmation in Practice: TUM Library Example
+	• Encounter at a TUM Doctoral Day stand showed that even major services (library tutoring, mentoring, publishing help) are barely used.
+	• Staff admitted causes: buried in newsletters, too much info overload, low incentive to inquire.
+	• Matches the same pattern: information asymmetry + cognitive overload + friction.
+	• Students perceive these services as non-urgent and optional, even though they could have high impact.
+	• Confirms the broader thesis: valuable opportunities are systematically underutilized because access is foggy and presentation isn’t blunt.
+
+Interestingly, there seems to be a contrast between state help(free, but bureaucratic, undersubscribed, hidden under layers of newsletters) and private help (paid, sometimes exploitative, sometimes brilliant, but marketed with too much hype to know if its worth it). 
+
+Another example: tum project weeks, tum future minds for logistics, tum entrepreneurship day, munich aerospace, tng big tech day
+https://project-s.space/careers
+
+
+
+IDEATE
+
+North Star Principle
+Perfect transparency would mean:
+	• One page.
+	• Sortable fields (paid/unpaid, lead time, discipline).
+	• Peer comments for blunt reality.
+	• Structured data for comparability.
+This is the direction all fixes point to.
+
+Barrier Tags & Customization
+	• Users posting reviews can tag opportunities as Low / Medium / High barrier:
+		○ Low: virtually no qualifications, open to average students.
+		○ Medium: requires some semester progress, basic reliability, or 6+ months free time.
+		○ High: elite programs, selective incubators, scholarships (e.g. TUMJA).
+	• This simple triage helps students self-select without drowning in detail.
+	• Further customization (e.g. “needs embedded design experience” or “3rd semester required”) could be added, but risks bloat. Keep HN mindset: minimal tags first, detailed text in comments if needed.
+
+Personalization Beyond Barriers
+	• Program/Semester filter: show only relevant postings based on a student’s study program and current semester.
+	• Deadline visibility: whenever available, show exact deadline. If missing, display relative info (“applications usually close in June”).
+	• Tag clusters: not only barrier level but also type: academic, extracurricular, job, event.
+	• Peer lens: highlight reviews from students with similar background (same program/semester) to increase trust.
+	• Interest-based follow: let students star tags (e.g. “AI,” “manufacturing,” “entrepreneurship”) and see those first.
+Minimal core: barrier tags + type tags. Everything else optional.
+
+Scientific Lens & Design Thinking
+From a design research perspective:
+	• Validated core: information asymmetry, time compression, and friction are well-documented barriers in student opportunity access.
+	• Design Thinking fit: the process forces:
+		1. Empathize: map many student experiences, not just a few anecdotes.
+		2. Define: sharpen into a crisp problem statement (opportunity discovery as the unifying issue).
+		3. Ideate: brainstorm solutions (tags, Reddit-thread model, bluntness).
+		4. Prototype: test minimal versions (HN-style scope).
+		5. Test: validate with real students if blunt style/barrier tags actually help.
+	• Current stage: this work is strong on reframing + ideation, but needs explicit validation with diverse student stories to avoid bias.
+	• Takeaway: before moving fully to solutions, cluster student narratives and check resonance of the framework (fog, bluntness, barriers) across a broader base.
+
+
+Outlook:
+	1. Gain traction with students via Pre-Internship reviews. Focus first on the main painpoint. 
+	2. Once i gain momentum ie 500 users per month i can 
+		1. Expand the offerings from pre-internships to internships overall, then to events, courses (eg Innovation sprint), Student initiatives, modules, etc
+		2. Collaborate with companies. They pay to get to post job listings on the website. Explain how this is a effective way to get to students and recruit. 
+	3. The goal of step 2.1. is to 
+		1. Finance the platform
+		2. Network with the companies in a high quality manner, through collaboration.
+	4. After step 2.1 i will have a network of 30-50 ish companies and a monthly recurring revenue in the lower thousands maybe. The Funding can either go into hosting the platform and developing it further. But It also serves as runway for going entrepreneural mode on automation technologies for these companies. Maybe they suffer from fachkräftemangel and have specific problems they are dealing with. Imagine having a solid budget to develop a manipulator arm that manipulates a drehmaschine or a blechbiegemaschine. Old machines german companies still have lying around because they dont sell and still dont use because they have bought newer more competitive machines the workers use and the old ones are used for training purposes but mostly unused because they require a lot of manual input and they lack the workers or the cost of operating them is too high given the lower quality output they produce
+

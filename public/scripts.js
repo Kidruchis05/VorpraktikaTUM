@@ -6,8 +6,7 @@ const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 async function fetchReviews() {
     const { data, error } = await supabase
         .from('reviews')
-        .select('id, company, website, comment, upvotes, created_at')
-        // order the reviews table by upvotes and then creation time
+        .select('id, company, website, reviewer_name, comment, tags, upvotes, created_at')
         .order('upvotes', { ascending: false })
         .order('created_at', { ascending: false });
 
@@ -16,6 +15,18 @@ async function fetchReviews() {
         return [];
     }
 
-    // the data is an array of review objects
     return data;
+}
+
+async function upvoteReview(reviewId) {
+    const { data, error } = await supabase
+        .rpc('increment_upvotes', { review_id: reviewId });
+    
+    if (error) {
+        console.error('Error upvoting:', error);
+        return;
+    }
+    
+    // Refresh the page to show updated upvotes
+    location.reload();
 }

@@ -15,13 +15,28 @@ document.addEventListener('DOMContentLoaded', async () => {
             year: 'numeric'
         });
 
-        card.innerHTML = `
-            <h4>${review.company}</h4>
-            ${review.website ? `<a href="${review.website}" target="_blank">${review.website}</a>` : ''}
-            <p>${review.comment || ''}</p>
-            <small>${review.upvotes} upvotes | ${formattedDate}</small>
+        const tags = review.tags ? review.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : '';
+        
+      card.innerHTML = `
+        <h4>${review.company}</h4>
+        <small class="reviewer-name">${review.reviewer_name ? review.reviewer_name : 'Anonymous'}</small>
+        ${review.website ? `<a href="${review.website}" target="_blank">${review.website}</a>` : ''}
+        <div class="tags">${tags}</div>
+        <p>${review.comment || ''}</p>
+        <div class="review-footer">
+            <div class="upvote-section">
+                <button class="upvote-btn">▲</button>
+                <span class="upvote-count">${review.upvotes}</span>
+            </div>
+            <small>${formattedDate}</small>
+        </div>
         `;
 
         container.appendChild(card);
+
+        const upvoteBtn = card.querySelector('.upvote-btn');
+        upvoteBtn.addEventListener('click', async () => {
+        await handleUpvote(review.id, upvoteBtn);
+        });
     });
 });
