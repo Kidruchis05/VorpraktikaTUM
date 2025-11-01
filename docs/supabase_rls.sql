@@ -15,7 +15,6 @@ CREATE TABLE IF NOT EXISTS reviews (
     atmosphere text, -- structured: how was the work environment?
     would_recommend text, -- structured: would you recommend this to others?
     tags text[], -- e.g. ['paid', 'vorpraktikum']
-    comment text, -- legacy/review body (kept for backwards compatibility)
     pdf_hash text,  -- hash of optional PDF
     upvotes integer DEFAULT 0,
     verified boolean DEFAULT false

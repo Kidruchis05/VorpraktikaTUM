@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                 `;
             }
-            // Fallback to old comment field if new structured fields aren't available
-            if (!reviewContent && review.comment) {
-                reviewContent = `<p>${review.comment}</p>`;
+            // If no structured review content exists, show empty (shouldn't happen with new structured fields)
+            if (!reviewContent) {
+                reviewContent = '<p><em>No review content available</em></p>';
             }
 
             card.innerHTML = `
