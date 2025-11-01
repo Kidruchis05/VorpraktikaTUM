@@ -18,18 +18,23 @@
                     <span>vorpraktika.de</span>
                 </div>
                 <div class="nav-links">
-                    <a href="#">Postings</a>
-                    <span class="pipe">|</span>
+                    <a href="#" class="nav-hidden">Postings</a>
+                    <span class="pipe nav-hidden">|</span>
                     <a href="submit.html">submit</a>
                 </div>
             </div>
             <div class="nav-links">
-                <a href="/login.html">login</a>
+                <a href="/login.html" class="nav-hidden">login</a>
             </div>
         </div>
     </div>
 
     <div class="subcontainer">
+        <div class="filters" style="margin: 12px 0;">
+            <label style="margin-right:12px;"><input type="checkbox" class="tag-filter" value="paid"> paid</label>
+            <label style="margin-right:12px;"><input type="checkbox" class="tag-filter" value="low-barrier"> low-barrier</label>
+            <label style="margin-right:12px;"><input type="checkbox" class="tag-filter" value="recommended"> recommended</label>
+        </div>
     </div>
     <script src="showReviews.js"></script>
     <script src="upvote.js"></script> 

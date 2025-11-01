@@ -28,12 +28,23 @@
             </p>
             <p>
                 <label for="reviewer-name">your name or nickname:</label><br>
-                <input type="text" id="reviewer-name" name="reviewer_name">
+                <input type="text" id="reviewer-name" name="reviewer_name" required>
             </p>
             <p>
-                <label for="company-website">text:</label><br>
-                <textarea id="review" name="review_text" required
-                    rows="6">write about your experience here</textarea>
+                <label for="work">Work:</label><br>
+                <textarea id="work" name="work" required rows="5" placeholder="What kind of work did you do? (e.g., 'Mostly manual filing, some basic measurements, turning, milling, etc.')"></textarea>
+            </p>
+            <p>
+                <label for="learning-value">Learning value:</label><br>
+                <textarea id="learning-value" name="learning_value" required rows="5" placeholder="Did you learn anything useful? (e.g., 'Not much technical skills, but good for understanding shop floor routines, how to use the machine tools, etc.')"></textarea>
+            </p>
+            <p>
+                <label for="atmosphere">Atmosphere:</label><br>
+                <textarea id="atmosphere" name="atmosphere" required rows="5" placeholder="How was the work environment? Team, supervisor, workload? (e.g., 'Supervisors were helpful, team was friendly, but very busy, etc.')"></textarea>
+            </p>
+            <p>
+                <label for="would-recommend">Would I recommend this to others? Why or why not?:</label><br>
+                <textarea id="would-recommend" name="would_recommend" required rows="5" placeholder="Would you recommend this to others? Why or why not? (e.g., 'Yes, if you just need to get it done quickly, no if you expect to actually manufacture something, etc.')"></textarea>
             </p>
 
             <p>

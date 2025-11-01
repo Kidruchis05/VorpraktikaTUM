@@ -14,13 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const company = document.getElementById('company-name').value.trim();
         let website = document.getElementById('company-website').value.trim();
         const reviewerName = document.getElementById('reviewer-name') ? document.getElementById('reviewer-name').value.trim() : '';
-        const comment = document.getElementById('review').value.trim();
+        const work = document.getElementById('work').value.trim();
+        const learningValue = document.getElementById('learning-value').value.trim();
+        const atmosphere = document.getElementById('atmosphere').value.trim();
+        const wouldRecommend = document.getElementById('would-recommend').value.trim();
         const tagsSelect = document.getElementById('tags');
         const tags = Array.from(tagsSelect.selectedOptions).map(opt => opt.value);
 
-        console.log('Form data:', { company, website, comment, tags });
+        console.log('Form data:', { company, website, work, learningValue, atmosphere, wouldRecommend, tags });
 
-        if (!company || !website || !comment || !reviewerName) {
+        if (!company || !website || !reviewerName || !work || !learningValue || !atmosphere || !wouldRecommend) {
             alert('Please fill in all required fields');
             return;
         }
@@ -38,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 company,
                 website,
                 reviewer_name: reviewerName || null,
-                comment: comment,
+                work_description: work,
+                learning_value: learningValue,
+                atmosphere: atmosphere,
+                would_recommend: wouldRecommend,
                 tags
             });
 

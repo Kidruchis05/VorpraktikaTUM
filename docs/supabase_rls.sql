@@ -10,8 +10,12 @@ CREATE TABLE IF NOT EXISTS reviews (
     company text NOT NULL,
     website text,
     reviewer_name text, -- display name or nickname of the reviewer
+    work_description text, -- structured: what kind of work did you do?
+    learning_value text, -- structured: did you learn anything useful?
+    atmosphere text, -- structured: how was the work environment?
+    would_recommend text, -- structured: would you recommend this to others?
     tags text[], -- e.g. ['paid', 'vorpraktikum']
-    comment text, -- review body; (change from text[] to text if not already)
+    comment text, -- legacy/review body (kept for backwards compatibility)
     pdf_hash text,  -- hash of optional PDF
     upvotes integer DEFAULT 0,
     verified boolean DEFAULT false
