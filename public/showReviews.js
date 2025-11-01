@@ -35,28 +35,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             const tags = review.tags ? review.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : '';
 
             // Build structured review display
-            let reviewContent = '';
-            if (review.work_description || review.learning_value || review.atmosphere || review.would_recommend) {
-                reviewContent = `
-                    <div class="structured-review">
-                        ${review.work_description ? `<div class="review-section"><strong>Work:</strong> ${review.work_description}</div>` : ''}
-                        ${review.learning_value ? `<div class="review-section"><strong>Learning value:</strong> ${review.learning_value}</div>` : ''}
-                        ${review.atmosphere ? `<div class="review-section"><strong>Atmosphere:</strong> ${review.atmosphere}</div>` : ''}
-                        ${review.would_recommend ? `<div class="review-section"><strong>Would recommend?</strong> ${review.would_recommend}</div>` : ''}
-                    </div>
-                `;
+            // Split into always-visible (Work) and collapsible (rest)
+            let alwaysVisibleContent = '';
+            let collapsibleContent = '';
+            
+            if (review.work_description) {
+                alwaysVisibleContent = `<div class="review-section"><strong>Work:</strong> ${review.work_description}</div>`;
             }
-            // If no structured review content exists, show empty (shouldn't happen with new structured fields)
-            if (!reviewContent) {
-                reviewContent = '<p><em>No review content available</em></p>';
+            
+            const collapsibleSections = [];
+            if (review.learning_value) {
+                collapsibleSections.push(`<div class="review-section"><strong>Learning value:</strong> ${review.learning_value}</div>`);
             }
+            if (review.atmosphere) {
+                collapsibleSections.push(`<div class="review-section"><strong>Atmosphere:</strong> ${review.atmosphere}</div>`);
+            }
+            if (review.would_recommend) {
+                collapsibleSections.push(`<div class="review-section"><strong>Would recommend?</strong> ${review.would_recommend}</div>`);
+            }
+            
+            if (collapsibleSections.length > 0) {
+                collapsibleContent = `<div class="review-collapsible">${collapsibleSections.join('')}</div>`;
+            }
+            
+            const hasCollapsible = collapsibleContent.length > 0;
+            const showMoreBtn = hasCollapsible ? '<button class="show-more-btn">show more</button>' : '';
 
             card.innerHTML = `
                 <h4>${review.company}</h4>
                 <small class="reviewer-name">${review.reviewer_name ? review.reviewer_name : 'Anonymous'}</small>
                 ${review.website ? `<a href="${review.website}" target="_blank">${review.website}</a>` : ''}
                 <div class="tags">${tags}</div>
-                ${reviewContent}
+                <div class="structured-review">
+                    ${alwaysVisibleContent}
+                    ${collapsibleContent}
+                    ${showMoreBtn}
+                </div>
                 <div class="review-footer">
                     <div class="upvote-section">
                         <button class="upvote-btn">▲</button>
@@ -67,6 +81,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             `;
 
             reviewsContainer.appendChild(card);
+
+            // Wire up show more/less button
+            if (hasCollapsible) {
+                const showMoreBtnEl = card.querySelector('.show-more-btn');
+                const collapsibleEl = card.querySelector('.review-collapsible');
+                
+                showMoreBtnEl.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    collapsibleEl.classList.toggle('expanded');
+                    showMoreBtnEl.textContent = collapsibleEl.classList.contains('expanded') ? 'show less' : 'show more';
+                });
+            }
 
             const upvoteBtn = card.querySelector('.upvote-btn');
             upvoteBtn.addEventListener('click', async () => {
