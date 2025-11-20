@@ -18,6 +18,8 @@ async function fetchReviews() {
     return data;
 }
 
+// ... existing code ...
+
 async function upvoteReview(reviewId) {
     const { data, error } = await supabase
         .rpc('increment_upvotes', { review_id: reviewId });
